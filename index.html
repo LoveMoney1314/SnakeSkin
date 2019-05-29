@@ -1,45 +1,269 @@
-extends base
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
 
-block title
-    title= config.title
+    
 
-block content
-    include _partial/common.pug
-    .l-postlist
-        each post in page.posts.toArray()
-            .l-post
-                .p-desc.box
-                    .p-pic
-                    //- title
-                    h1.p-title
-                        a(href=url_for(post.path))
-                            +title(post)
+    
 
-                    //- description
-                    if post.description
-                        .p-content
-                            != post.description
-                    else if post.excerpt
-                        .p-content
-                            != post.excerpt
-                    else if post.content
-                        - var br = 0
-                        - for (var i = 0; i < 5; ++i) {
-                            - br = post.content.indexOf('\n',br+1)
-                            if br < 0
-                                - break
-                            if br > 150
-                                - break
-                        - }
-                        if br < 0
-                            .p-content
-                                != post.content
-                        else
-                            .p-content
-                                != post.content.substring(0, br)
-                    //- readmore
-                    p(class='p-readmore')
-                        a(href=url_for(post.path))= __('阅读更多 >>')
 
-                +post-meta(post)
-    include _partial/paginator.pug
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content>
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">John Doe</h5>
+          <a href="mailto:1132670963@qq.com" title="1132670963@qq.com" class="mail">1132670963@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect active">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/yscoder" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/ysweb" target="_blank">
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom">
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Hexo</div>
+        
+        
+    </div>
+</header>
+<header class="content-header index-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Hexo</h1>
+        <h5 class="subtitle">
+            
+                
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+<div class="container body-wrap">
+
+    <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-博客名字" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-03-08 15:06:35" datetime="2019-03-08T07:06:35.000Z" itemprop="datePublished">2019-03-08</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/03/08/博客名字/">金钱豹博客</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        <p>[博客网址] (<a href="https://lovemoney1314.github.io/" target="_blank" rel="noopener">https://lovemoney1314.github.io/</a>)<br><b><em>This is an </em><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">制作博客的链接</a>.</b></p>
+<h3 id="参考形式的链接可以让你链接一个名称"><a href="#参考形式的链接可以让你链接一个名称" class="headerlink" title="参考形式的链接可以让你链接一个名称."></a>参考形式的链接可以让你链接一个名称.</h3><blockquote>
+<p><b>[1]:<a href="http://google.com/&quot;酷狗&quot;" target="_blank" rel="noopener">http://google.com/&quot;酷狗&quot;</a>.</b></p>
+<p><b>[2]:<a href="http://search.yahoo.com/&quot;Yahoo" target="_blank" rel="noopener">http://search.yahoo.com/&quot;Yahoo</a> Search”</b></p>
+<p><b>[3]:<a href="http://search.msn.com/&quot;MSN" target="_blank" rel="noopener">http://search.msn.com/&quot;MSN</a> Search”</b></p>
+</blockquote>
+<h3 id="故事"><a href="#故事" class="headerlink" title="故事"></a>故事</h3>
+    
+
+        <a href="/2019/03/08/博客名字/" class="post-more waves-effect waves-button">
+            続きを読む…
+        </a>
+    </div>
+    
+</article>
+
+        </li>
+    
+    </ul>
+
+    
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>John Doe &copy; 2015 - 2019</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: , REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '蛇皮！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
