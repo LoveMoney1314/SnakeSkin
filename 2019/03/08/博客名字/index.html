@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="[博客网址] (https://lovemoney1314.github.io/SnakeSkin.github.io/) ###SELECT1234567$ SELECT TOP 4*FROM student 筛选出前4行$ SELECT 学号,姓名 FROM student $ SELECT *FROM student where 学号=&amp;apos;1615925413&amp;apos;$ SELE">
+<meta name="description" content="[博客网址] (https://lovemoney1314.github.io/SnakeSkin.github.io/) SELECT1234567$ SELECT TOP 4*FROM student 筛选出前4行$ SELECT 学号,姓名 FROM student $ SELECT *FROM student where 学号=&apos;1615925413&apos;$ SELECT *FROM stud">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQLSever">
 <meta property="og:url" content="http://yoursite.com/2019/03/08/博客名字/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="[博客网址] (https://lovemoney1314.github.io/SnakeSkin.github.io/) ###SELECT1234567$ SELECT TOP 4*FROM student 筛选出前4行$ SELECT 学号,姓名 FROM student $ SELECT *FROM student where 学号=&amp;apos;1615925413&amp;apos;$ SELE">
+<meta property="og:description" content="[博客网址] (https://lovemoney1314.github.io/SnakeSkin.github.io/) SELECT1234567$ SELECT TOP 4*FROM student 筛选出前4行$ SELECT 学号,姓名 FROM student $ SELECT *FROM student where 学号=&apos;1615925413&apos;$ SELECT *FROM stud">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-01T14:05:24.359Z">
+<meta property="og:updated_time" content="2019-07-01T14:15:47.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQLSever">
-<meta name="twitter:description" content="[博客网址] (https://lovemoney1314.github.io/SnakeSkin.github.io/) ###SELECT1234567$ SELECT TOP 4*FROM student 筛选出前4行$ SELECT 学号,姓名 FROM student $ SELECT *FROM student where 学号=&amp;apos;1615925413&amp;apos;$ SELE">
+<meta name="twitter:description" content="[博客网址] (https://lovemoney1314.github.io/SnakeSkin.github.io/) SELECT1234567$ SELECT TOP 4*FROM student 筛选出前4行$ SELECT 学号,姓名 FROM student $ SELECT *FROM student where 学号=&apos;1615925413&apos;$ SELECT *FROM stud">
 
 
 
@@ -300,9 +300,9 @@
 
       
         <p>[博客网址] (<a href="https://lovemoney1314.github.io/SnakeSkin.github.io/" target="_blank" rel="noopener">https://lovemoney1314.github.io/SnakeSkin.github.io/</a>)</p>
-<p>###SELECT<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ SELECT TOP 4*FROM student 筛选出前4行</span><br><span class="line">$ SELECT 学号,姓名 FROM student </span><br><span class="line">$ SELECT *FROM student where 学号=&apos;1615925413&apos;</span><br><span class="line">$ SELECT *FROM student Order By 年龄 </span><br><span class="line">$ SELECT 性别,Max(年龄)AS &apos;平均年龄&apos; FROM student Group By 性别 </span><br><span class="line">$ SELECT 性别,Avg(年龄)AS &apos;平均年龄&apos; FROM student Group By 性别 having Avg(年龄)&gt;19--??????????</span><br><span class="line">$ SELECT 性别,Avg(年龄)AS &apos;平均年龄&apos; FROM student where 年龄&gt;18 Group By 性别 having Avg(年龄)&gt;19</span><br></pre></td></tr></table></figure></p>
-<p>###Insert<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ Insert Into student Values(7,&apos;1615925477&apos;,&apos;网上&apos;,24,&apos;男&apos;) --插入数据</span><br><span class="line">$ Insert Into student(顺序,学号,年龄,性别)Values(8,&apos;1615925478&apos;,24,&apos;男&apos;) --指定插入的列</span><br><span class="line">$ /*Insert student(顺序,学号,年龄,性别)--一次插入多个记录 使用Union合并数据 </span><br><span class="line">$ Select 9,&apos;1615925479&apos;,20,&apos;女&apos;Union</span><br><span class="line">$ Select 10,&apos;1615925480&apos;,19,&apos;女&apos;Union</span><br><span class="line">$ Select 11,&apos;1615925481&apos;,20,&apos;女&apos;*/</span><br></pre></td></tr></table></figure></p>
-<p>###Update<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ Update student Set 学号=&apos;1715925480&apos; where 学号=&apos;1615925480&apos;--更改数据</span><br><span class="line">$ Delete student where 学号=&apos;1615925478&apos;--删除数据</span><br><span class="line">$ SELECT *FROM student where 年龄 Between 20 And 25</span><br></pre></td></tr></table></figure></p>
+<h3 id="SELECT"><a href="#SELECT" class="headerlink" title="SELECT"></a>SELECT</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ SELECT TOP 4*FROM student 筛选出前4行</span><br><span class="line">$ SELECT 学号,姓名 FROM student </span><br><span class="line">$ SELECT *FROM student <span class="built_in">where</span> 学号=<span class="string">'1615925413'</span></span><br><span class="line">$ SELECT *FROM student Order By 年龄 </span><br><span class="line">$ SELECT 性别,Max(年龄)AS <span class="string">'平均年龄'</span> FROM student Group By 性别 </span><br><span class="line">$ SELECT 性别,Avg(年龄)AS <span class="string">'平均年龄'</span> FROM student Group By 性别 having Avg(年龄)&gt;19--??????????</span><br><span class="line">$ SELECT 性别,Avg(年龄)AS <span class="string">'平均年龄'</span> FROM student <span class="built_in">where</span> 年龄&gt;18 Group By 性别 having Avg(年龄)&gt;19</span><br></pre></td></tr></table></figure>
+<h3 id="Insert"><a href="#Insert" class="headerlink" title="Insert"></a>Insert</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ Insert Into student Values(7,<span class="string">'1615925477'</span>,<span class="string">'网上'</span>,24,<span class="string">'男'</span>) --插入数据</span><br><span class="line">$ Insert Into student(顺序,学号,年龄,性别)Values(8,<span class="string">'1615925478'</span>,24,<span class="string">'男'</span>) --指定插入的列</span><br><span class="line">$ /*Insert student(顺序,学号,年龄,性别)--一次插入多个记录 使用Union合并数据 </span><br><span class="line">$ Select 9,<span class="string">'1615925479'</span>,20,<span class="string">'女'</span>Union</span><br><span class="line">$ Select 10,<span class="string">'1615925480'</span>,19,<span class="string">'女'</span>Union</span><br><span class="line">$ Select 11,<span class="string">'1615925481'</span>,20,<span class="string">'女'</span>*/</span><br></pre></td></tr></table></figure>
+<p>###Update<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ Update student Set 学号=<span class="string">'1715925480'</span> <span class="built_in">where</span> 学号=<span class="string">'1615925480'</span>--更改数据</span><br><span class="line">$ Delete student <span class="built_in">where</span> 学号=<span class="string">'1615925478'</span>--删除数据</span><br><span class="line">$ SELECT *FROM student <span class="built_in">where</span> 年龄 Between 20 And 25</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -371,8 +371,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -414,6 +423,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#SELECT"><span class="nav-number">1.</span> <span class="nav-text">SELECT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Insert"><span class="nav-number">2.</span> <span class="nav-text">Insert</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
